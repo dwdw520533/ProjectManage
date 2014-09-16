@@ -23,3 +23,631 @@ REQUEST_URI=/index.php
 in C:\www\demo\protected\views\layouts\main.php (51)
 in C:\www\demo\protected\views\layouts\column1.php (6)
 in C:\www\demo\protected\controllers\SiteController.php (32)
+2014/09/15 14:15:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/default/index
+---
+2014/09/15 14:17:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/default/index
+---
+2014/09/15 14:19:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 14:30:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 14:32:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 14:32:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 14:36:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 14:36:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 15:04:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 15:07:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Base 'pmanage' inconnue' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 15:08:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Base 'pmanage' inconnue' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 15:08:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Base 'pmanage' inconnue' in D:\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\www\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 D:\www\framework\web\CFormModel.php(39): ModelCode->init()
+#6 D:\www\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 D:\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#13 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\www\ProjectManage\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8008/index.php?r=gii/module/index
+---
+2014/09/15 16:20:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/admin')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/15 18:12:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to find the code you requested.' in D:\www\framework\gii\CCodeGenerator.php:90
+Stack trace:
+#0 D:\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionCode()
+#1 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 D:\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\www\framework\web\CWebApplication.php(282): CController->run('code')
+#5 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/code')
+#6 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\www\ProjectManage\index.php(15): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php?r=gii/model/code&id=0
+---
+2014/09/15 20:00:07 [error] [php] array_filter() expects parameter 1 to be array, object given (D:\www\ProjectManage\protected\controllers\InfoController.php:126)
+Stack trace:
+#0 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\www\framework\web\filters\CFilterChain.php(133): InfoController->runAction()
+#2 D:\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 D:\www\framework\web\filters\CInlineFilter.php(58): InfoController->filterAccessControl()
+#5 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\www\framework\web\CController.php(265): InfoController->runActionWithFilters()
+#8 D:\www\framework\web\CWebApplication.php(282): InfoController->run()
+#9 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 D:\www\ProjectManage\index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php?r=info/index
+in D:\www\ProjectManage\protected\controllers\InfoController.php (126)
+in D:\www\ProjectManage\index.php (15)
+2014/09/15 20:06:52 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.condition" is not defined.' in D:\www\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\framework\web\CActiveDataProvider.php(96): CComponent->__set('condition', 'delete_flag=0')
+#1 D:\www\ProjectManage\protected\controllers\InfoController.php(127): CActiveDataProvider->__construct('Info', Array)
+#2 D:\www\framework\web\actions\CInlineAction.php(49): InfoController->actionIndex()
+#3 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#12 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/index')
+#13 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\www\ProjectManage\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=info/index
+---
+2014/09/15 20:06:54 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.condition" is not defined.' in D:\www\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\framework\web\CActiveDataProvider.php(96): CComponent->__set('condition', 'delete_flag=0')
+#1 D:\www\ProjectManage\protected\controllers\InfoController.php(127): CActiveDataProvider->__construct('Info', Array)
+#2 D:\www\framework\web\actions\CInlineAction.php(49): InfoController->actionIndex()
+#3 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#12 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/index')
+#13 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\www\ProjectManage\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=info/index
+---
+2014/09/15 20:12:38 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.delete_flag" is not defined.' in D:\www\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\framework\db\schema\CDbCriteria.php(160): CComponent->__set('delete_flag', 0)
+#1 D:\www\framework\web\CActiveDataProvider.php(117): CDbCriteria->__construct(Array)
+#2 D:\www\framework\base\CComponent.php(152): CActiveDataProvider->setCriteria(Array)
+#3 D:\www\framework\web\CActiveDataProvider.php(96): CComponent->__set('criteria', Array)
+#4 D:\www\ProjectManage\protected\controllers\InfoController.php(127): CActiveDataProvider->__construct('Info', Array)
+#5 D:\www\framework\web\actions\CInlineAction.php(49): InfoController->actionIndex()
+#6 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/index')
+#16 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\www\ProjectManage\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=info/index
+---
+2014/09/15 20:12:45 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.delete_flag" is not defined.' in D:\www\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\framework\db\schema\CDbCriteria.php(160): CComponent->__set('delete_flag', 0)
+#1 D:\www\framework\web\CActiveDataProvider.php(117): CDbCriteria->__construct(Array)
+#2 D:\www\framework\base\CComponent.php(152): CActiveDataProvider->setCriteria(Array)
+#3 D:\www\framework\web\CActiveDataProvider.php(96): CComponent->__set('criteria', Array)
+#4 D:\www\ProjectManage\protected\controllers\InfoController.php(127): CActiveDataProvider->__construct('Info', Array)
+#5 D:\www\framework\web\actions\CInlineAction.php(49): InfoController->actionIndex()
+#6 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/index')
+#16 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\www\ProjectManage\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=info/index
+---
+2014/09/15 20:13:21 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.Delete Flag" is not defined.' in D:\www\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\www\framework\db\schema\CDbCriteria.php(160): CComponent->__set('Delete Flag', 0)
+#1 D:\www\framework\web\CActiveDataProvider.php(117): CDbCriteria->__construct(Array)
+#2 D:\www\framework\base\CComponent.php(152): CActiveDataProvider->setCriteria(Array)
+#3 D:\www\framework\web\CActiveDataProvider.php(96): CComponent->__set('criteria', Array)
+#4 D:\www\ProjectManage\protected\controllers\InfoController.php(127): CActiveDataProvider->__construct('Info', Array)
+#5 D:\www\framework\web\actions\CInlineAction.php(49): InfoController->actionIndex()
+#6 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 D:\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/index')
+#16 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\www\ProjectManage\index.php(15): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=info/index
+---
+2014/09/16 10:39:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/admin')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=info/admin
+---
+2014/09/16 10:40:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/admin')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=info/admin
+---
+2014/09/16 12:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "crate".' in D:\www\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\framework\web\CController.php(270): CController->missingAction('crate')
+#1 D:\www\framework\web\CWebApplication.php(282): CController->run('crate')
+#2 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/crate')
+#3 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\www\ProjectManage\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=info/crate
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 12:52:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 12:57:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 13:23:12 [error] [php] strpos() expects parameter 1 to be string, array given (D:\www\framework\web\CController.php:706)
+Stack trace:
+#0 D:\www\framework\web\CController.php(867): SiteController->getViewFile()
+#1 D:\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\www\ProjectManage\protected\controllers\SiteController.php(32): SiteController->render()
+#3 D:\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\www\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php
+in D:\www\ProjectManage\protected\controllers\SiteController.php (32)
+in D:\www\ProjectManage\index.php (15)
+2014/09/16 13:25:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 13:28:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 13:47:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 13:57:16 [error] [exception.CException] exception 'CException' with message 'Filter "allow" is invalid. Controller "InfoController" does not have the filter method "filterallow".' in D:\www\framework\web\filters\CInlineFilter.php:46
+Stack trace:
+#0 D:\www\framework\web\filters\CFilterChain.php(72): CInlineFilter::create(Object(InfoController), 'allow')
+#1 D:\www\framework\web\CController.php(291): CFilterChain::create(Object(InfoController), Object(CInlineAction), Array)
+#2 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\www\framework\web\CWebApplication.php(282): CController->run('index')
+#4 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/index')
+#5 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\www\ProjectManage\index.php(15): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=info/index
+HTTP_REFERER=http://localhost:8008/index.php?r=info/view&id=1
+---
+2014/09/16 14:10:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 14:11:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
+2014/09/16 14:11:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\www\framework\web\CWebApplication.php(141): CWebApplication->runController('info/delete')
+#9 D:\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\www\ProjectManage\index.php(15): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?ajax=yw0&id=1&r=info%2Fdelete
+HTTP_REFERER=http://localhost:8008/index.php?r=info/index
+---
