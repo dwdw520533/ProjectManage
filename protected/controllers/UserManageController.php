@@ -1,6 +1,6 @@
 <?php
 
-class InfoController extends Controller
+class UserManageController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,20 +28,20 @@ class InfoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','create','update','delete'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','delete'),
+				'actions'=>array('create','update'),
+				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
-//			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-//				'actions'=>array('admin','delete'),
-//				'users'=>array('*'),
-//			),
-//			array('deny',  // deny all users
-//				'users'=>array('*'),
-//			),
 		);
 	}
 
@@ -62,18 +62,20 @@ class InfoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Info;
+		$model=new UserManage;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Info']))
+		if(isset($_POST['UserManage']))
 		{
-			$model->attributes=$_POST['Info'];
-			if($model->save()){
-                $this->redirect(array('info/index'));
+			$model->attributes=$_POST['UserManage'];
+			if($model->save())
+            {
+                $this->redirect(array('userManage/index'));
                 exit;
             }
+				//$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -93,12 +95,12 @@ class InfoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Info']))
+		if(isset($_POST['UserManage']))
 		{
-			$model->attributes=$_POST['Info'];
+			$model->attributes=$_POST['UserManage'];
 			if($model->save())
             {
-				$this->redirect(array('info/index'));
+                $this->redirect(array('userManage/index'));
                 exit;
             }
 		}
@@ -115,13 +117,8 @@ class InfoController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-        $model = $this->loadModel($id);
-        $model->delete_flag = 1;
-        if($model->save(false))
-        {
-            $this->redirect(array('info/index'));
-            exit;
-        }
+		$this->loadModel($id)->delete();
+        $this->redirect(array('userManage/index'));
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -132,13 +129,10 @@ class InfoController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Info',array(
-            'criteria'=>array(
-                'condition'=>'delete_flag=0',//正常用户
-            ),
+		$dataProvider=new CActiveDataProvider('UserManage',array(
             'pagination'=>array(
                 'pageSize'=>100,
-             ),
+            )
         ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -150,10 +144,10 @@ class InfoController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Info('search');
+		$model=new UserManage('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Info']))
-			$model->attributes=$_GET['Info'];
+		if(isset($_GET['UserManage']))
+			$model->attributes=$_GET['UserManage'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -164,12 +158,12 @@ class InfoController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Info the loaded model
+	 * @return UserManage the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Info::model()->findByPk($id);
+		$model=UserManage::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -177,11 +171,11 @@ class InfoController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Info $model the model to be validated
+	 * @param UserManage $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='info-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='user-manage-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

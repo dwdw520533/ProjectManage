@@ -30,7 +30,7 @@
             array('name'=>'host', 'header'=>'服务器地址', 'htmlOptions'=>array('style'=>'width: 85px')),
             array('name'=>'port', 'header'=>'端口号', 'htmlOptions'=>array('style'=>'width: 50px')),
             array('name'=>'owner', 'header'=>'管理者','htmlOptions'=>array('style'=>'width: 70px')),
-            array('name'=>'deployment_address', 'header'=>'环境部署目录', 'htmlOptions'=>array('style'=>'width: 220px')),
+            array('name'=>'deployment_address', 'header'=>'环境部署目录', 'htmlOptions'=>array('style'=>'width: 250px')),
             array('name'=>'web_address', 'header'=>'对外访问地址', 'htmlOptions'=>array('style'=>'width: 220px')),
             array('name'=>'description', 'header'=>'服务描述', 'htmlOptions'=>array('style'=>'width: 280px')),
             array(
