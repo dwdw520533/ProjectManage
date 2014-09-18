@@ -35,7 +35,7 @@ class SiteController extends Controller
         $model->rememberMe = true;
         $model->login();
 
-		$this->redirect(array('info/index'));
+//		$this->redirect(array('info/index'));
 	}
 
 	/**
