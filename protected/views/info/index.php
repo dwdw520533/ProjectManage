@@ -25,8 +25,8 @@
         'dataProvider'=>$dataProvider,
         'template'=>"{items}",
         'columns'=>array(
-            array('name'=>'id', 'header'=>'#'),
-            array('name'=>'type', 'header'=>'类型', 'htmlOptions'=>array('style'=>'width: 60px')),
+            array('name'=>'id', 'header'=>'序号', 'htmlOptions'=>array('style'=>'width: 40px')),
+            array('name'=>'type', 'header'=>'项目名称', 'htmlOptions'=>array('style'=>'width: 100px')),
             array('name'=>'host', 'header'=>'服务器地址', 'htmlOptions'=>array('style'=>'width: 85px')),
             array('name'=>'port', 'header'=>'端口号', 'htmlOptions'=>array('style'=>'width: 50px')),
             array('name'=>'owner', 'header'=>'管理者','htmlOptions'=>array('style'=>'width: 70px')),

@@ -25,8 +25,8 @@
         'dataProvider'=>$dataProvider,
         'template'=>"{items}",
         'columns'=>array(
-            array('name'=>'id', 'header'=>'#', 'htmlOptions'=>array('style'=>'width: 40px')),
-            array('name'=>'type', 'header'=>'类型', 'htmlOptions'=>array('style'=>'width: 100px')),
+            array('name'=>'id', 'header'=>'序号', 'htmlOptions'=>array('style'=>'width: 40px')),
+            array('name'=>'type', 'header'=>'项目类型', 'htmlOptions'=>array('style'=>'width: 100px')),
             array('name'=>'address', 'header'=>'服务器地址', 'htmlOptions'=>array('style'=>'width: 300px')),
             array('name'=>'user', 'header'=>'登陆账户', 'htmlOptions'=>array('style'=>'width: 120px')),
             array('name'=>'password', 'header'=>'密码','htmlOptions'=>array('style'=>'width: 120px')),
